@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Sandeep's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-left">
+                    <h1>Sai Sandeep</h1>
+                    <p class="student-text">Computer Science Student</p>
+                </div>
+                <ul class="nav-right">
+                    <li><a href="#about" class="btn about-btn">About Me</a></li>
+                    <li><a href="mailto:saissspet@gmail.com" class="btn email-btn">Email</a></li>
+                    <li><a href="#projects" class="btn resume-btn">Projects</a></li>
+                    <li><a href="javascript:void(0);" class="btn resume-pdf-btn" onclick="redirectToResume()">Resume</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/saisandeeps" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/saisandeep.ig" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/7386068826" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/saisandeep-dev" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </nav>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-text">Hi, I'm Sai</p>
+                <a href="#projects" class="btn">Explore My Work</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="profilephoto.jpg" alt="Sai Sandeep's profile photo" class="profile-photo">
+                    <div class="about-text">
+                        <p>Hi, I'm <strong>Sai Sandeep</strong>!</p>
+        
+                        <p>I’m a Computer Science student with a passion for tech and innovation. I'm particularly interested in <strong>Software Development Engineer (SDE)</strong> and <strong>Business Analyst</strong> roles, where I can blend my coding skills with business insights.</p>
+        
+                        <p>When I’m not coding, you can find me playing cricket!</p>
+        
+                        <p>I love using technology to transform challenges into simple, elegant, and intuitive designs. My goal is to create applications that are not only functional and user-friendly but also visually appealing.</p>
+        
+                        <p class="thank-you">Thanks for visiting my page! There’s much more to come, so be sure to check back often! 😊</p>
+                    </div>
+                </div>
+            </div>
+        </section>                      
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-list">
+                    <article class="project-item">
+                        <h3><a href="https://github.com/saisandeep-dev/Face-Recognition-Attendance-System" target="_blank">Face Recognition Attendance System</a></h3>
+                        <p>This Python application utilizes OpenCV for real-time face detection and recognition, automating attendance and storing data into Excel sheets.</p>
+                    </article>
+                    <article class="project-item">
+                        <h3><a href="https://github.com/saisandeep-dev/Real-Time-Chat-Application" target="_blank">Real-Time Chat Application</a></h3>
+                        <p>This web-based chat platform enables real-time communication, ideal for personal and professional use.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
