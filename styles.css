@@ -283,3 +283,48 @@ footer p {
         font-size: 1.3rem;
     }
 }
+
+/* Adjustments specifically for 320px screens */
+@media (max-width: 320px) {
+    .nav-right {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.4rem; /* Further reduced gap between buttons */
+    }
+
+    .nav-right li a {
+        padding: 0.3rem 0.6rem; /* Reduced padding for even smaller buttons */
+        font-size: 0.8rem; /* Reduced font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1.8rem; /* Smaller font size for hero text */
+    }
+
+    .hero .btn {
+        padding: 0.5rem 1rem; /* Reduced padding for buttons */
+        font-size: 0.9rem;
+    }
+
+    .about h2, .projects h2 {
+        font-size: 1.4rem; /* Smaller heading sizes */
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .social-icon {
+        font-size: 1.2rem; /* Reduced social icon size */
+    }
+
+    footer {
+        padding: 2rem 2rem;
+    }
+}
