@@ -1,35 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', (e) => {
-            e.preventDefault();
-            document.querySelector(anchor.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+// Redirects to Resume in a new window
+function redirectToResume() {
+    const resumeUrl = 'https://drive.google.com/file/d/1xv3CqSXHoUWAEFaxNG6di85EebDbnWQp/view';
+    window.open(resumeUrl, '_blank'); // Opens the resume in a new tab
+}
 
-    // Email button confirmation
-    const emailBtn = document.querySelector('.email-btn');
-    if (emailBtn) {
-        emailBtn.addEventListener('click', (event) => {
-            if (!confirm('Do you want to send an email to Sai Sandeep?')) {
-                event.preventDefault();
-            }
-        });
-    }
-
-    // Redirect for social links
-    const socialLinks = document.querySelectorAll('.social-icon');
-    socialLinks.forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevent default behavior
-            window.open(link.href, '_blank'); // Open in new tab
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
     });
 });
 
-function redirectToResume() {
-    const resumeUrl = 'https://drive.google.com/file/d/1DxJPrFzg6avaOyKCY_oOKqJmUQw_Mw_Q/view';
-    window.open(resumeUrl, '_blank');
-}
+// Confirm before opening the email link
+document.querySelector('.email-btn').addEventListener('click', function(event) {
+    if (!confirm('Do you want to send an email to Sai Sandeep?')) {
+        event.preventDefault();
+    }
+});
+
