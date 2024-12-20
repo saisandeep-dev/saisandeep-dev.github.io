@@ -39,17 +39,20 @@ header nav {
 
 .nav-left h1 {
     font-size: 2rem; /* Adjusted font size */
+    margin-bottom: 0.2rem; /* Reduced margin-bottom to decrease the gap */
 }
 
 .nav-left p {
     color: var(--text-color);
     font-size: 1rem; /* Adjusted font size */
+    margin-top: 0; /* Ensures there's no margin above the paragraph */
 }
 
 .nav-right {
     list-style: none;
     display: flex;
     gap: 1rem; /* Adjusted gap between buttons */
+    flex-wrap: nowrap; /* Prevents wrapping of nav items */
 }
 
 .nav-right li a {
@@ -194,16 +197,17 @@ footer p {
     .nav-right {
         flex-direction: row;
         justify-content: space-between;
-        gap: 1rem;
+        gap: 0.8rem; /* Reduced gap between buttons */
         width: 100%;
+        flex-wrap: nowrap; /* Ensures buttons stay in one line */
     }
 
     .nav-right li {
-        width: 22%;
+        width: auto; /* Allow the buttons to take only as much space as needed */
     }
 
     .nav-right li a {
-        padding: 0.4rem 1rem;
+        padding: 0.4rem 0.8rem; /* Reduced padding to fit buttons in one line */
         font-size: 0.9rem; /* Adjusted font size for mobile buttons */
     }
 
@@ -212,7 +216,7 @@ footer p {
     }
 
     .hero .btn {
-        padding: 0.5rem 1.2rem;
+        padding: 0.5rem 1rem;
         font-size: 1rem;
     }
 
