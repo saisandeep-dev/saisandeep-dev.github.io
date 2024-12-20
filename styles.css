@@ -1,4 +1,4 @@
-:root { 
+:root {
     --primary-color: #007BFF;
     --primary-hover: #0056b3;
     --text-color: #333;
@@ -14,55 +14,53 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-}
-
-header nav {
-    background-color: skyblue;
-    padding: 1rem;
+    background-color: var(--bg-color);
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+header nav {
+    background-color: skyblue;
+    padding: 1.5rem 2rem; /* Adjusted for smaller header */
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-left {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
 }
 
 .nav-left h1 {
-    font-size: 1.8rem;
+    font-size: 2rem; /* Adjusted font size */
 }
 
 .nav-left p {
     color: var(--text-color);
-    font-size: 0.9rem;
+    font-size: 1rem; /* Adjusted font size */
 }
 
 .nav-right {
     list-style: none;
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.nav-right li {
-    flex: 1;
+    gap: 1rem; /* Adjusted gap between buttons */
 }
 
 .nav-right li a {
     text-decoration: none;
     color: white;
     background-color: var(--primary-color);
-    padding: 0.5rem 0.7rem;
+    padding: 0.4rem 1rem; /* Smaller padding for smaller buttons */
+    text-align: center;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    text-align: center;
+    font-size: 1rem; /* Adjusted font size for buttons */
 }
 
 .nav-right li a:hover {
@@ -70,29 +68,29 @@ header nav {
 }
 
 .hero {
-    height: 80vh;
-    background: var(--bg-color);
+    height: 80vh; /* Adjusted height for hero section */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: var(--bg-color);
 }
 
-.hero .hero-text {
-    font-size: 5rem;
-    color: var(--text-color);
+.hero p {
+    font-size: 3rem;
     font-weight: bold;
-    margin: 0 0 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
 }
 
 .hero .btn {
-    margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
+    padding: 0.6rem 1.2rem; /* Smaller button for hero section */
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-size: 1rem; /* Smaller font size for hero button */
 }
 
 .hero .btn:hover {
@@ -100,35 +98,21 @@ header nav {
 }
 
 .about {
-    padding: 3rem 1rem;
-    margin-bottom: 3rem;
+    padding: 3rem 2rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
 }
 
 .about-content {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 2rem;
-}
-
-.about-text {
-    flex: 1;
-}
-
-.thank-you {
-    margin-top: 2rem; /* Adjust the value as needed for spacing */
-}
-
-.about h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-    text-align: center;
-}
-
-.about p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #666;
+    align-items: center;
 }
 
 .profile-photo {
@@ -140,19 +124,20 @@ header nav {
 }
 
 .projects {
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
 }
 
 .projects h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
+    font-size: 2rem;
     text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
 }
 
 .project-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 1.5rem;
     justify-content: space-between;
 }
 
@@ -160,41 +145,42 @@ header nav {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 1.5rem;
     width: 48%;
-    margin-bottom: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-item h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .project-item p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #555;
 }
 
 footer {
     background: #87ceeb;
-    text-align: center;
-    padding: 1rem;
-    color: #fff;
-    border-top: 2px solid #1e90ff;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem; /* Adjusted padding for footer */
+    color: white;
+    border-top: 3px solid #1e90ff; /* Adjusted border for footer */
+}
+
+footer p {
+    margin-left: 2rem;
 }
 
 .social-links {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .social-icon {
-    color: #fff;
-    font-size: 1.5rem;
+    color: white;
+    font-size: 1.8rem; /* Adjusted social icon size */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -203,34 +189,93 @@ footer {
     color: #ffd700;
 }
 
+/* Media Queries for Mobile View */
 @media (max-width: 768px) {
+    .nav-right {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .nav-right li {
+        width: 22%;
+    }
+
+    .nav-right li a {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem; /* Adjusted font size for mobile buttons */
+    }
+
+    .hero p {
+        font-size: 2.5rem;
+    }
+
+    .hero .btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+    }
+
     .about-content {
         flex-direction: column;
         align-items: center;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
     }
 
     .project-item {
         width: 100%;
     }
 
-    .hero-text {
-        font-size: 2rem;
+    .projects h2, .about h2 {
+        font-size: 1.6rem;
     }
 
-    .nav-right li {
-        flex: none;
-    }
-
-    .nav-right li a {
-        padding: 0.5rem 1rem;
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 2.5rem;
     }
 
     .social-links {
-        top: 0.5rem;
-        right: 0.5rem;
+        justify-content: center;
     }
 
     .social-icon {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-left h1 {
+        font-size: 1.6rem;
+    }
+
+    .nav-left p {
+        font-size: 0.9rem;
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
+
+    .hero .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .project-item {
+        width: 100%;
+    }
+
+    .project-item h3 {
         font-size: 1.2rem;
+    }
+
+    .social-icon {
+        font-size: 1.3rem;
     }
 }
