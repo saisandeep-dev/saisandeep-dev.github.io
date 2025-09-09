@@ -105,11 +105,19 @@ section {
   padding: 3rem 1rem;
 }
 
+/* About Me Section */
 .about-content {
   display: flex;
-  gap: 2rem;
   align-items: center;
+  justify-content: center;  /* Center horizontally */
+  gap: 2rem;
   flex-wrap: wrap;
+}
+
+.about-content p {
+  text-align: justify;       /* Justify the paragraph text */
+  max-width: 600px;          /* Prevent text from stretching too wide */
+  margin: 0 auto;            /* Center paragraph block */
 }
 
 .profile-photo {
@@ -117,6 +125,12 @@ section {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   flex-shrink: 0;
+  margin-bottom: 0;           /* Adjust for spacing on larger screens */
+  transition: transform 0.3s;
+}
+
+.profile-photo:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
 }
 
 /* Projects */
@@ -201,13 +215,17 @@ footer {
   }
 
   .about-content {
-    flex-direction: column;
+    flex-direction: column;  /* Stack photo and text */
     text-align: center;
   }
 
   .profile-photo {
     width: 140px;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;     /* Space between photo and text */
+  }
+
+  .about-content p {
+    max-width: 90%;
   }
 
   .project-item {
@@ -238,5 +256,13 @@ footer {
   .social-links a {
     font-size: 1.3rem;
     margin: 0 0.4rem;
+  }
+
+  .profile-photo {
+    width: 120px;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
   }
 }
