@@ -1,23 +1,23 @@
-// Redirects to Resume in a new window
+// Open Resume in new tab
 function redirectToResume() {
-    const resumeUrl = 'https://drive.google.com/file/d/1xv3CqSXHoUWAEFaxNG6di85EebDbnWQp/view';
-    window.open(resumeUrl, '_blank'); // Opens the resume in a new tab
+  const resumeUrl = 'https://drive.google.com/file/d/1RLfcMM0xSC7HAxns18VZ89X9Y0LF5esi/view?usp=sharing';
+  window.open(resumeUrl, '_blank');
 }
 
-// Smooth scrolling for navigation links
+// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+  anchor.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
     });
+  });
 });
 
-// Confirm before opening the email link
-document.querySelector('.email-btn').addEventListener('click', function(event) {
-    if (!confirm('Do you want to send an email to Sai Sandeep?')) {
-        event.preventDefault();
-    }
+// Custom email confirm
+document.querySelector('.email-btn').addEventListener('click', e => {
+  e.preventDefault();
+  if (confirm('📧 Do you want to send an email to Sai Sandeep?')) {
+    window.location.href = e.target.href;
+  }
 });
-
