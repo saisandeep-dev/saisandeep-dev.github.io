@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Sandeep's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Sandeep's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="nav-left">
-                <h1>Sai Sandeep</h1>
-                <p>Computer Science Student</p>
-            </div>
-            <ul class="nav-right">
-                <li><a href="#about" class="btn">About Me</a></li>
-                <li><a href="mailto:saissspet@gmail.com" class="btn email-btn">Email</a></li>
-                <li><a href="https://github.com/saisandeep-dev" class="btn" target="_blank">Projects</a></li>
-                <li><a href="javascript:void(0);" class="btn" onclick="redirectToResume()">Resume</a></li>
-            </ul>
-        </nav>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <p>Hi, I'm Sai Sandeep.</p>
-                <a href="#projects" class="btn">Explore My Work</a>
-            </div>
-        </section>
-    </header>
+  <header>
+    <nav class="container navbar">
+      <div class="nav-left">
+        <h1>Sai Sandeep</h1>
+        <p>Computer Science Student</p>
+      </div>
+      <ul class="nav-right">
+        <li><a href="#about" class="btn">About</a></li>
+        <li><a href="#projects" class="btn">Projects</a></li>
+        <li><a href="mailto:saissspet@gmail.com" class="btn email-btn">Email</a></li>
+        <li><a href="javascript:void(0);" class="btn" onclick="redirectToResume()">Resume</a></li>
+      </ul>
+    </nav>
 
-    <section id="about" class="about container">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="profilephoto.jpg" alt="Sai Sandeep" class="profile-photo">
-            <div>
-                <p>
-                    Hi, I'm <strong>Sai Sandeep</strong>, a Computer Science student passionate about tech and innovation. I'm interested in <strong>SDE</strong> and <strong>Business Analyst</strong> roles. When I'm not coding, you can find me playing cricket! This portfolio showcases my projects, skills, and experiences as a student. Let's connect and explore opportunities together!
-                </p>
-            </div>
-        </div>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="hero-intro">Hi, I'm <span class="highlight">Sai Sandeep</span>.</p>
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+      </div>
     </section>
+  </header>
 
-    <section id="projects" class="projects container">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <h3><a href="https://github.com/saisandeep-dev/Face-Recognition-Attendance-System" target="_blank">Face Recognition Attendance System</a></h3>
-                <p>Python-based application using OpenCV for real-time face recognition, automating attendance recording in Excel.</p>
-            </div>
-            <div class="project-item">
-                <h3><a href="https://github.com/saisandeep-dev/Real-Time-Chat-Application" target="_blank">Real-Time Chat Application</a></h3>
-                <p>Web-based chat platform with real-time messaging, offering a simple and intuitive communication interface.</p>
-            </div>
+  <section id="about" class="about container fade-in">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="profilephoto.jpg" alt="Sai Sandeep" class="profile-photo">
+      <p>
+        Hi, I'm <strong>Sai Sandeep</strong>, a Computer Science student passionate about 
+        <strong>Software Development</strong> and <strong>Data Analyst</strong> roles.  
+        I enjoy solving problems, building impactful projects, and continuously learning new technologies.  
+        Beyond coding, I love playing cricket and exploring innovative ideas! 🏏✨
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects container fade-in">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-item">
+        <h3>Face Recognition Attendance System</h3>
+        <p>Python-based app using OpenCV for real-time face recognition, automating attendance in Excel.</p>
+        <div class="project-links">
+          <a href="https://github.com/saisandeep-dev/Face-Recognition-Attendance-System" target="_blank"><i class="fab fa-github"></i></a>
         </div>
-    </section>
-
-    <footer class="container">
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/saisandeeps" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/saisandeep.ig" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/7386068826" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <div class="project-item">
+        <h3>Real-Time Chat Application</h3>
+        <p>Web chat platform with real-time messaging and a simple, intuitive interface.</p>
+        <div class="project-links">
+          <a href="https://github.com/saisandeep-dev/Real-Time-Chat-Application" target="_blank"><i class="fab fa-github"></i></a>
         </div>
-        <p>&copy; 2024 Sai Sandeep. All rights reserved.</p>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <footer class="container">
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/saisandeeps" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/saisandeep.ig" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/7386068826" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2024 Sai Sandeep. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
